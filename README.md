@@ -27,6 +27,8 @@ In this extension I've attempted to stop this from happening **if** the aforemen
 
 This is really temporary solution, we're hoping to get the issues fixed in the core following conversations with various developers/maintainers/contributors. The problem with this is that its a case of, is this a Bug or a Feature?
 
+**If you would like to show options/swatches even if all children are out of stock you need to make a template change, you need to remove the $product->isSalable() checks from the Magento_Catalog::product/view/form.phtml template**
+
 # Installation
 
 - Add the module to composer:
