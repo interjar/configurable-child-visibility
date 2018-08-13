@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\ConfigurableProduct\Model\Product\Type\Collection\SalableProcessor" type="Interjar\ConfigurableChildVisibility\Model\Product\Type\Configurable\Collection\SalableProcessor" />
+    <type name="Magento\ConfigurableProduct\Model\ResourceModel\Product\LinkedProductSelectBuilder">
+        <arguments>
+            <argument name="baseSelectProcessor" xsi:type="object">Interjar\ConfigurableChildVisibility\Model\ResourceModel\Product\StockStatusBaseSelectProcessor</argument>
+        </arguments>
+    </type>
+</config>

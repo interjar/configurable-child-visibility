@@ -1,0 +1,51 @@
+{
+    "name": "interjar/module-configurable-child-visibility",
+    "description": "Magento 2.x Extension to prevent Out of Stock Children being removed from Used Product Collections.",
+    "type": "magento2-module",
+    "license": "MIT",
+    "version": "0.6.1",
+    "keywords": ["Out Of Stock", "Child Products", "Collection", "Interjar", "Magento 2"],
+    "homepage": "https://interjar.com",
+    "authors": [
+        {
+            "name": "Josh Carter",
+            "email": "josh@interjar.com",
+            "homepage": "https://interjar.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "7.0.2|7.0.4|~7.0.6|~7.1.0",
+        "magento/framework": "101.*",
+        "magento/module-eav": "101.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.2.0",
+        "magento/marketplace-eqp": "^1.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Interjar\\ConfigurableChildVisibility\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Interjar\\ConfigurableChildVisibility\\Test\\": "Test/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/magento/marketplace-eqp"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
