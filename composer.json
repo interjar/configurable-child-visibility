@@ -15,9 +15,9 @@
         }
     ],
     "require": {
-        "php": "7.0.2|7.0.4|~7.0.6|~7.1.0",
-        "magento/framework": "101.*",
-        "magento/module-eav": "101.*"
+        "php": "7.0.2|7.0.4|~7.0.6|~7.1.0|~7.2.0",
+        "magento/framework": "102.*",
+        "magento/module-eav": "102.*"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.2.0",
