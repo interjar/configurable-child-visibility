@@ -45,14 +45,14 @@ class StockStatusBaseSelectProcessor implements BaseSelectProcessorInterface
     {
         if (!$this->stockConfig->isShowOutOfStock()) {
             $select->joinInner(
-                ['stock' => $this->stockStatusResource->getMainTable()],
+                ['stock_interjar_ccv' => $this->stockStatusResource->getMainTable()],
                 sprintf(
-                    'stock.product_id = %s.entity_id',
+                    'stock_interjar_ccv.product_id = %s.entity_id',
                     BaseSelectProcessorInterface::PRODUCT_TABLE_ALIAS
                 ),
                 []
             )->where(
-                'stock.stock_status = ?',
+                'stock_interjar_ccv.stock_status = ?',
                 StockStatus::STATUS_IN_STOCK
             );
         }
