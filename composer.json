@@ -3,7 +3,7 @@
     "description": "Magento 2.x Extension to prevent Out of Stock Children being removed from Used Product Collections.",
     "type": "magento2-module",
     "license": "MIT",
-    "version": "0.6.3",
+    "version": "0.6.4",
     "keywords": ["Out Of Stock", "Child Products", "Collection", "Interjar", "Magento 2"],
     "homepage": "https://interjar.com",
     "authors": [
