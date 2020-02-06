@@ -17,7 +17,7 @@
     "require": {
         "php": "7.0.2|7.0.4|~7.0.6|~7.1.0|~7.2.0|~7.3.0",
         "magento/framework": "101.*|102.*",
-        "magento/module-configurable-product": "101.*|102.*"
+        "magento/module-configurable-product": "100.1.*|100.2.*|100.3.*",
     },
     "require-dev": {
         "phpunit/phpunit": "~6.2.0",
