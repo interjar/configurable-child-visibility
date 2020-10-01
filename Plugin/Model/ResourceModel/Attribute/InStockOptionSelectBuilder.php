@@ -31,7 +31,7 @@ class InStockOptionSelectBuilder extends CoreInStockOptionSelectBuilder
         Status $stockStatusResource,
         StockConfigurationInterface $stockConfiguration
     ) {
-        parent::__construct($stockStatusResource);
+        parent::__construct($stockStatusResource, $stockConfiguration);
         $this->stockConfiguration = $stockConfiguration;
     }
 
